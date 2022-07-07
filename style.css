@@ -1,0 +1,55 @@
+.navbar {
+    padding: 10px 0 10px 20px;
+    font-size: 18px;
+    color: white;
+}
+
+#navbarNav {
+    margin-left: 400px;
+}
+
+#logo {
+    width: 100px;
+    margin-left: 50px;
+}
+
+#intro {
+    color: white;
+    background-color: #24292d;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+
+#intro-text {
+    padding: 20px;
+    font-size: 20PX;
+}
+
+#intro-text h1 {
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+#intro-photo img {
+    /* margin-top: 20px; */
+    width: 400px;
+}
+
+#hire-me {
+    background-color: #00ffbb;
+    /* font-weight: bold; */
+    border-radius: 30px;
+    padding: 10px;
+    width: 200px;
+}
+
+#content {
+    color: white;
+    background-color: #292f35;
+    height: 500px;
+}
+
+/* 212529 */
