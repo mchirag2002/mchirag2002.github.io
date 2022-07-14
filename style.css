@@ -1,6 +1,10 @@
 .container-fluid {
     padding: 0;
+}
+
+.element.style {
     --bs-gutter-x: 0;
+
 }
 
 .navbar {
@@ -54,7 +58,44 @@
 #content {
     color: white;
     background-color: #292f35;
-    height: 500px;
+    /* height: 500px; */
+
+}
+
+#my-introduction-text {
+    padding: 20px;
+    margin: 20px;
+    margin-top: 150px;
+    display: inline;
+    font-size: 20px;
+}
+
+#my-introduction-photo {
+    padding: 20px;
+    margin: 20px;
+    margin-top: 150px;
+    display: inline;
+}
+
+#my-introduction-photo img {
+    border-radius: 30px;
+    outline: 2px ridge #00ffbb;
+    outline-offset: 15px;
+    /* box-shadow: 15px 15px 0.8 #00ffbb inset; */
+}
+
+#my-introduction {
+    display: flex;
+    justify-content: center;
+}
+
+#languages {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 150px;
+    font-size: 20px;
 }
 
 /* 212529 */
