@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -13,6 +17,10 @@
     padding: 10px 0 10px 20px;
     font-size: 18px;
     color: white;
+    width: 100%;
+    top: 0;
+    /* position: fixed; */
+    height: 100px;
 }
 
 #navbarNav {
@@ -68,7 +76,7 @@
 #my-introduction-text {
     padding: 20px;
     margin: 20px;
-    margin-top: 150px;
+    margin-top: 100px;
     display: inline;
     font-size: 20px;
 }
@@ -76,7 +84,7 @@
 #my-introduction-photo {
     padding: 20px;
     margin: 20px;
-    margin-top: 150px;
+    margin-top: 100px;
     display: inline;
 }
 
@@ -90,6 +98,9 @@
 #my-introduction {
     display: flex;
     justify-content: center;
+    padding: 30px;
+    margin-bottom: 50px;
+
 }
 
 .languages {
@@ -154,7 +165,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.cSharp {
+.html {
     background-color: #fc00ff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -221,13 +232,479 @@
     border-radius: 15px;
 }
 
-.my-projects {
+.project-heading {
     display: flex;
     justify-content: center;
 }
 
-.my-projects h2 {
-    color: #00ffbb;
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+.skills {
+    /* padding: 40px; */
+    padding-top: 20px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #24292d;
+    /* background-color: #292f35; */
+    color: white;
+    padding-bottom: 50px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.skills h1:first-of-type {
+    font-weight: bolder;
+    color: white;
+
+}
+
+
+@media (max-width: 400px) {
+    .skills h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.skills-header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.skills-header p {
+    margin: 0 auto;
+    line-height: 2;
+    color: white;
+}
+
+
+.skill-box p {
+    color: var(--grayishBlue);
+}
+
+.skill-box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px rgb(89, 88, 88);
+    padding: 30px;
+    background-color: rgb(30, 30, 30);
+    margin: 20px;
+}
+
+.skill-box:hover {
+    background-color: rgb(44, 44, 44);
+    box-shadow: 0px 40px 50px -10px rgb(89, 88, 88);
+    margin-top: 25px;
+    /* right: 5px; */
+}
+
+.skills img {
+    float: right;
+    width: 70px;
+}
+
+@media (max-width: 450px) {
+    .skill-box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .skill-box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 5px solid var(--cyan);
+}
+
+.red {
+    border-top: 5px solid var(--red);
+}
+
+.blue {
+    border-top: 5px solid var(--blue);
+}
+
+.orange {
+    border-top: 5px solid var(--orange);
+}
+
+.skills h2 {
+    color: white;
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+    .skills-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+
+    .skill-box {
+        width: 20%;
+
+    }
+
+    .skills-header p {
+        width: 30%;
+    }
+
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+} */
+
+.project {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: #292f35;
+
+}
+
+.project-header {
+    color: whitesmoke;
+    font-weight: var(--weight3);
+    font-size: 2rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px 0;
+}
+
+
+
+.projects .project-card {
+    position: relative;
+    min-width: 300px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.projects .project-card:nth-child(1) .project-box .project-content a {
+    background: #2196f3;
+}
+
+.projects .project-card:nth-child(2) .project-box .project-content a {
+    background: #e91e63;
+}
+
+.projects .project-card:nth-child(3) .project-box .project-content a {
+    background: #23c186;
+}
+
+.projects .project-card:nth-child(4) .project-box .project-content a {
+    background: #9723c1;
+}
+
+.projects .project-card:nth-child(5) .project-box .project-content a {
+    background: #a81131;
+}
+
+.projects .project-card .project-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #23282d;
+    border-radius: 15px;
+    /* border-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.projects .project-card .project-box:hover {
+    transform: translateY(-50px);
+}
+
+.projects .project-card .project-box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.projects .project-card .project-box .project-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.projects .project-card .project-box .project-content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.projects .project-card .project-box .project-content h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+.projects .project-card .project-box .project-content p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.projects .project-card .project-box .project-content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.projects .project-card .project-box .project-content a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+}
+
+.c {
+    background-color: #24292d;
+    /* width: 99%; */
+}
+
+.contacts {
+    margin-top: 150px;
+    display: flex;
+    /* background-color: black; */
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 150px;
+    font-weight: bolder;
+}
+
+.contacts-heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 50px;
+    /* background-color: black; */
+}
+
+.contact-list {
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+    top: auto;
+    /* margin-top: 50px; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+
+.contact-list li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+.contact-list li a .fa {
+    font-size: 50px;
+    color: #262626;
+    line-height: 80px;
+    transition: .4s;
+    padding-right: 14px;
+}
+
+.contact-list li a span {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    color: #262626;
+    letter-spacing: 4px;
+    transition: .4s;
+}
+
+.contact-list li a {
+    text-decoration: none;
+    display: absolute;
+    display: block;
+    width: 210px;
+    height: 80px;
+    background: #fff;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: .4s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+}
+
+.contact-list li a:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transform: .4s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.contact-list li a:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transform: .4s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+.contact-list li a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+}
+
+.contact-list li:hover .fa {
+    color: #fff;
+}
+
+.contact-list li:hover span {
+    color: #fff;
+}
+
+.contact-list li:hover:nth-child(1) a {
+    background: #3b5998;
+}
+
+.contact-list li:hover:nth-child(1) a:before {
+    background: #365492;
+}
+
+.contact-list li:hover:nth-child(1) a:after {
+    background: #4a69ad;
+}
+
+.contact-list li:hover:nth-child(2) a {
+    background: #dd4b39;
+}
+
+.contact-list li:hover:nth-child(2) a:before {
+    background: #b33a2b;
+}
+
+.contact-list li:hover:nth-child(2) a:after {
+    background: #e66a5a;
+}
+
+.contact-list li:hover:nth-child(3) a {
+    background: #2b2b2b;
+}
+
+.contact-list li:hover:nth-child(3) a:before {
+    background: #1f1f1f;
+}
+
+.contact-list li:hover:nth-child(3) a:after {
+    background: #373737;
+}
+
+.contact-list li:hover:nth-child(4) a {
+    background: #00aced;
+}
+
+.contact-list li:hover:nth-child(4) a:before {
+    background: #097aa5;
+}
+
+.contact-list li:hover:nth-child(4) a:after {
+    background: #53b9e0;
+}
+
+
+.contact-list li:hover:nth-child(5) a {
+    background: #e4405f;
+}
+
+.contact-list li:hover:nth-child(5) a:before {
+    background: #d81c3f;
+}
+
+.contact-list li:hover:nth-child(5) a:after {
+    background: #e46880;
 }
 
 /* 212529 */

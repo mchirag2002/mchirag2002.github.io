@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,16 +23,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav justify-content-center mx-auto">
                     <li class="nav-item active" style="color: white;">
-                        <a class="nav-link" href="#">Home </a>
+                        <a class="nav-link" href="#intro">Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#my-introduction">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Me</a>
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -48,7 +52,9 @@
                 I am an Engineering undergrad developer<br>
                 based in Jaipur and with a passion for technology.
             </p>
-            <button id="hire-me">Hire Me</button>
+            <a href="#contact" style="color:black; text-decoration: none;">
+                <button id="hire-me">Hire Me</button>
+            </a>
         </div>
         <div id="intro-photo">
             <img src="images/studying.png" alt="">
@@ -83,81 +89,177 @@
                     HackerRank in
                     programming in Java and Python.
                 </p>
-                <button id="hire-me" style="font-size:medium">Download Resume</button>
+                <a href="https://drive.google.com/file/d/15h5MHKNwVd_DDXlWdztx9K16lrPOddQz/view?usp=sharing"
+                    target="_blank">
+                    <button id="hire-me" style="font-size:medium">Download Resume</button>
+                </a>
             </div>
         </div>
-        <!-- <p style="color:#00ffbb; margin-left: 40%; margin-bottom: 0;">My Arsenal -----</p> -->
 
-        <div class="languages">
-            <div class="container">
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content">
-                            <span class="stars"></span>
-                            <h2 class="java">Java</h2>
-                            <p class="java">Java is a class-based, object-oriented programming language that is designed
-                                to have
-                                as
-                                few implementation dependencies as possible.</p>
+        <div class="skills" id="skills">
+            <div class="skills-header">
+                <h1>MY SKILLS</h1>
+
+            </div>
+            <div class="skills-1">
+                <div class="skill-box box-down cyan">
+                    <h2>Java</h2>
+                    <p>Java is a class-based, object-oriented programming language that is designed
+                        to have
+                        as
+                        few implementation dependencies as possible.</p>
+                    <img src="images/java.jpg" alt="">
+                </div>
+
+                <div class="skill-box red">
+                    <h2>Python</h2>
+                    <p>Python is an interpreted, high-level and general-purpose programming
+                        language. Its design philosophy emphasizes code readability with the use of significant
+                        indentation.
+                    </p>
+                    <img src="images/python.png" alt="">
+                </div>
+
+                <div class="skill-box box-down blue">
+                    <h2>C++</h2>
+                    <p>C++ is a powerful general-purpose programming language. It can be used to
+                        develop operating systems, browsers, games,
+                        and so on.</p>
+                    <img src="images/c++.png" alt="">
+                </div>
+            </div>
+            <div class="skills-2">
+                <div class="skill-box orange">
+                    <h2>HTML & CSS</h2>
+                    <p>The HTML is the standard for
+                        documents designed to be displayed in a web
+                        browser.
+                        CSS is used for describing the
+                        presentation of a document written in a markup
+                        language such as HTML.</p>
+                    <img src="images/web-dev.png" alt="" style="width: 80px;">
+                </div>
+            </div>
+
+        </div>
+        <div class="project" id="projects">
+            <div class="project-header">
+                <h1>MY PROJECTS</h1>
+
+            </div>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-box">
+                        <div class="project-content">
+                            <h2>01</h2>
+                            <h3>Sign Lang. to Speech communication system</h3>
+                            <p>Used Python, TensorFlow, OpenCV to develop a system with ML and Deep learning
+                                to enable any speech impaired person to use Sign
+                                Language even for calls.</p>
+                            <a href="https://github.com/mchirag2002/Sign-Language-Conversation-System"
+                                target="_blank">Read More</a>
                         </div>
-                    </div>
-                    <div class="face face2">
-                        <h2>Java</h2>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content">
-                            <span class="stars"></span>
-                            <h2 class="python">Python</h2>
-                            <p class="python">Python is an interpreted, high-level and general-purpose programming
-                                language.</p>
+                <div class="project-card">
+                    <div class="project-box">
+                        <div class="project-content">
+                            <h2>02</h2>
+                            <h3>Facial Recognition Security System</h3>
+                            <p>Used Python, OpenCV, Arduino, C# to implement a system that records the faces
+                                of the intruders and triggers the alarm and maintains a log. </p>
+                            <a href="https://github.com/mchirag2002/Facial-Recognition-Based-Security-System"
+                                target="_blank">Read More</a>
                         </div>
-                    </div>
-                    <div class="face face2">
-                        <h2>Python</h2>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content">
-                            <span class="stars"></span>
-                            <h2 class="cSharp">HTML & CSS</h2>
-                            <p class="cSharp">C# is a general-purpose, multi-paradigm programming language encompassing
-                                static
-                                typing, strong typing, lexically scoped and component-oriented programming disciplines.
+                <div class="project-card">
+                    <div class="project-box">
+                        <div class="project-content">
+                            <h2>03</h2>
+                            <h3>Booking And Management System</h3>
+                            <p>Used Java, NetBeans, MySQL to design a MakeMyTrip clone with enhanced
+                                admin features like in-app messaging and
+                                master control of data.</p>
+                            <a href="https://github.com/mchirag2002/MakeMyTrip-Clone" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-box">
+                        <div class="project-content">
+                            <h2>04</h2>
+                            <h3>Smartphone Controlled Robotic Arm</h3>
+                            <p>Used C#, Java and Python to control a robotic
+                                arm with 4 degrees of motion using a custom designed Andorid App over bluetooth
+                                connection.
                             </p>
+                            <a href="https://github.com/mchirag2002/Smartphone-controlled-robotic-arm"
+                                target="_blank">Read More</a>
                         </div>
-                    </div>
-                    <div class="face face2">
-                        <h2>HTML & CSS</h2>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content">
-                            <span class="stars"></span>
-                            <h2 class="java">C++</h2>
-                            <p class="java">C# is a general-purpose, multi-paradigm programming language encompassing
-                                static
-                                typing, strong typing, lexically scoped and component-oriented programming disciplines.
-                            </p>
+                <div class="project-card">
+                    <div class="project-box">
+                        <div class="project-content">
+                            <h2>05</h2>
+                            <h3>Portfolio Website</h3>
+                            <p>Used HTML, CSS, and Javascript to create this portfolio website that you are currently
+                                seeing. Bootstrap was also used to create a few elements.</p>
+                            <a href="https://mchirag2002.github.io">Read More</a>
                         </div>
-                    </div>
-                    <div class="face face2">
-                        <h2>C++</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="my-projects">
-            <div>
-                <h2>My Projects -----</h2>
+        <div class="c" id="contact">
+            <div class="contacts-heading">
+                <h1>CONNECT WITH ME</h1>
+            </div>
+            <div class="contacts">
+                <style>
+                    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+                </style>
+                <ul class="contact-list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/chirag-mathur/" target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span> - LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:mchirag2002@gmail.com"" target=" _blank">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                            <span> - Gmail</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mchirag2002" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <span> - Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/mchirag2002" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span> - Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/thechiragmathur/" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span> - Instagram</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+
+
+
 
 
 
