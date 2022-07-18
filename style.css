@@ -62,9 +62,16 @@ html {
 #hire-me {
     background-color: #00ffbb;
     /* font-weight: bold; */
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 10px;
+    font-weight: 500;
+    font-size: 20px;
     width: 200px;
+    /* box-shadow: -2px 2px 10px 0.1px rgb(117, 117, 117); */
+}
+
+#hire-me:hover {
+    background-color: #15e4ad;
 }
 
 #content {
@@ -542,7 +549,8 @@ html {
 .c {
     background-color: #24292d;
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
+    /* align-items: center; */
     /* width: 99%; */
 }
 
