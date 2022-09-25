@@ -456,7 +456,7 @@ html {
 }
 
 .projects .project-card:nth-child(3) .project-box .project-content a {
-    background: #23c186;
+    background: #3c6478;
 }
 
 .projects .project-card:nth-child(4) .project-box .project-content a {
@@ -465,6 +465,10 @@ html {
 
 .projects .project-card:nth-child(5) .project-box .project-content a {
     background: #a81131;
+}
+
+.projects .project-card:nth-child(6) .project-box .project-content a {
+    background: #829356;
 }
 
 .projects .project-card .project-box {
